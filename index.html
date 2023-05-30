@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News APP</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="setting">Set</a>
+        <a href="Logotitle">LogoTitle</a>
+        <div class="menucontainer">
+          <a href="Feed">Feed</a>
+          <a href="Liked">Liked</a>
+        </div>
+      </nav>
+      <section class="inputcontainer">
+        <input
+          type="text"
+          name="search"
+          id="searchkeywordinput"
+          placeholder="Search"
+        />
+        <input
+          onclick="searchNewsByKeyword()"
+          type="submit"
+          value="00"
+          class="searchbtn"
+          id="searchbtn"
+        />
+      </section>
+    </header>
+    <main>
+      <section class="categorycontainer">
+        <h2 class="categories-all">All</h2>
+        <h2 class="categories-general">General</h2>
+        <h2 class="categories-business">Business</h2>
+        <h2 class="categories-entertainment">Entertainment</h2>
+        <h2 class="categories-health">Health</h2>
+        <h2 class="categories-science">Science</h2>
+        <h2 class="categories-sports">Sports</h2>
+        <h2 class="categories-technology">Technology</h2>
+      </section>
+      <section class="categoryheadlinecontainer"></section>
+      <section class="newslistcontainer">
+        <h2 class="newslist-head-titles">Trending</h2>
+        <section class="trending-news-container"></section>
+        <h2 class="newslist-head-titles">Newest Headlines</h2>
+        <section class="newest-news-container"></section>
+      </section>
+    </main>
+    <footer></footer>
+    <script type="text/javascript" src="./assets/js/main.js"></script>
+  </body>
+</html>
