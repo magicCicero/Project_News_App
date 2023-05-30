@@ -22,7 +22,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-size: 1.8rem;
 }
 
 html {
@@ -33,12 +32,20 @@ a {
   font-family: helveticareg;
   font-weight: 500;
   color: black;
+  font-size: 2rem;
 }
 
 img {
   max-width: 100%;
 }
-
+body {
+  position: relative;
+}
+h1 {
+  font-family: raleway;
+  font-size: 4rem;
+  font-weight: 700;
+}
 h2 {
   font-size: 2rem;
 }
@@ -49,21 +56,56 @@ h4,
 h5 {
   font-size: 1.1rem;
 }
+main {
+  margin-top: 15rem;
+}
 /* HEADER  */
 nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
   padding: 1rem;
+  position: fixed;
+  top: 0;
+  flex-direction: column;
+  z-index: 99999;
+  background-color: white;
 }
-.menucontainer {
-  display: flex;
-}
+
 #searchkeywordinput {
   border: none;
   width: 80vw;
   font-size: 2rem;
   font-family: helveticareg;
   font-weight: bold;
+}
+.settingicon,
+.feedicon,
+.likedicon,
+.homeicon {
+  width: 8%;
+  height: 10%;
+}
+nav a {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  -webkit-box-shadow: inset 0px 5px 12px -7px rgba(140, 140, 140, 1);
+  -moz-box-shadow: inset 0px 5px 12px -7px rgba(140, 140, 140, 1);
+  box-shadow: inset 0px 5px 12px -7px rgba(140, 140, 140, 1);
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  width: 100vw; /* Passe die Breite an deine Bedürfnisse an */
+  background-color: rgb(255, 255, 255);
+  z-index: 999; /* Stelle sicher, dass die Navbar über anderen Inhalten liegt */
 }
 .searchbtn {
   background: url("../img/search.png") center no-repeat;

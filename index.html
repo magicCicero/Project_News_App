@@ -10,28 +10,23 @@
   <body>
     <header>
       <nav>
-        <a href="setting">Set</a>
-        <a href="Logotitle">LogoTitle</a>
-        <div class="menucontainer">
-          <a href="Feed">Feed</a>
-          <a href="Liked">Liked</a>
-        </div>
+        <a href="Logotitle"><h1>NEWS</h1></a>
+        <section class="inputcontainer">
+          <input
+            type="text"
+            name="search"
+            id="searchkeywordinput"
+            placeholder="Search"
+          />
+          <input
+            onclick="searchNewsByKeyword()"
+            type="submit"
+            value="00"
+            class="searchbtn"
+            id="searchbtn"
+          />
+        </section>
       </nav>
-      <section class="inputcontainer">
-        <input
-          type="text"
-          name="search"
-          id="searchkeywordinput"
-          placeholder="Search"
-        />
-        <input
-          onclick="searchNewsByKeyword()"
-          type="submit"
-          value="00"
-          class="searchbtn"
-          id="searchbtn"
-        />
-      </section>
     </header>
     <main>
       <section class="categorycontainer">
@@ -50,6 +45,17 @@
         <section class="trending-news-container"></section>
         <h2 class="newslist-head-titles">Newest Headlines</h2>
         <section class="newest-news-container"></section>
+      </section>
+      <section class="navbar">
+        <img
+          onClick="window.location.reload();"
+          class="homeicon"
+          src="./assets/img/home.png"
+          alt=""
+        />
+        <img class="feedicon" src="./assets/img/save-stroked.png" alt="" />
+        <img class="likedicon" src="./assets/img/heart-stroked.png" alt="" />
+        <img class="settingicon" src="./assets/img/setting.png" alt="" />
       </section>
     </main>
     <footer></footer>
